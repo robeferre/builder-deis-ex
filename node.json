@@ -1,0 +1,18 @@
+{
+ "run_list":["recipe[TM-tomcat::v7]"],
+ "java_environments": {
+		"tokiomarine.infra.CDN_VERSAO": {
+			"value": "3.3.1",
+			"override": "false"
+		},
+		"tokiomarine.plataforma.rest.SERVICES_URL": {
+			"value": "http://plataforma.tokio.dev",
+			"override": "false"
+		},
+		"tokiomarine.infra.ENCODING_PADRAO": {
+			"value": "UTF-8",
+			"override": "false"
+		}
+ },
+ "data-sources":["TMmeuDS","TMacxDS","TMconvergeDS","TMfrtDS","TMptmDS","TMvipDS","TMvoucherDS"]
+}
